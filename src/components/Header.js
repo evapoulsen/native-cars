@@ -1,11 +1,22 @@
 import React from "react";
-import {Text} from "react-native";
+import {StyleSheet, Text, View} from "react-native";
 
 const Header = () => {
     return (
-        <Text>Cars</Text>
+        <View style={styles.viewStyle}>
+            <Text style={styles.textStyling}>Cars</Text>
+        </View>
     );
 }
 
+const styles = StyleSheet.create({
+    textStyling: {
+        fontSize: 22
+    },
+    viewStyle: {
+        backgroundColor: 'grey',
+        padding: 10
+    }
+});
 export default Header;
 
