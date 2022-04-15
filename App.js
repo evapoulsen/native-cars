@@ -5,7 +5,7 @@ import CarList from './src/components/CarList';
 
 export default function App() {
   return (
-    <View>
+    <View style={styles.container}>
       <Header title={'Cars'}/>
       <CarList />
     </View>
@@ -15,6 +15,7 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff'
+    backgroundColor: '#eee'
   },
 });
+
