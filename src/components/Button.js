@@ -6,7 +6,7 @@ const AppButton = (props) => {
         <TouchableOpacity 
         onPress={props.buttonPress}
         style={styles.buttonStyle}>
-            <Text style={styles.textStyle}>Click Me</Text>
+            <Text style={styles.textStyle}>Visit Website</Text>
         </TouchableOpacity>
     );
 };
