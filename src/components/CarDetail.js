@@ -1,5 +1,6 @@
 import React from "react";
 import { View, Text, Image } from "react-native";
+import AppButton from "./Button";
 import Item from "./Item";
 import ItemSection from "./ItemSection";
 
@@ -19,6 +20,9 @@ const CarDetail = ({brand}) => {
                     source={{ uri: brand.model[0].image }}
                     />
                 </ItemSection>
+            </ItemSection>
+            <ItemSection>
+                <AppButton />
             </ItemSection>
         </Item>
     )
