@@ -1,14 +1,31 @@
 import React from "react";
-import { Button } from "react-native";
+import { Text, TouchableOpacity } from "react-native";
 
-const AppButton = () => {
+const AppButton = (props) => {
     return (
-        <Button 
-        title="Tap Me!" 
-        onPress={() => {
-            alert('You tapped the button!');
-        }}/>
-    )
+        <TouchableOpacity 
+        onPress={props.buttonPress}
+        style={styles.buttonStyle}>
+            <Text style={styles.textStyle}>Click Me</Text>
+        </TouchableOpacity>
+    );
+};
+
+const styles = {
+    textStyle: {
+        fontSize: 16,
+        fontWeight: '500',
+        paddingTop: 6,
+        paddingBottom: 6,
+        color: '#FFFFFF',
+        textAlign: 'center'
+    },
+    buttonStyle: {
+        backgroundColor: '#474749',
+        padding: 3,
+        width: '90%'   
+    }
 }
 
 export default AppButton;
+
